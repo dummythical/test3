@@ -1,0 +1,16 @@
+{
+  "name": "local-server-fetcher",
+  "version": "1.0.0",
+  "description": "Electron app to fetch data from local server with certificate pinning",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "electron": "^30.0.0"
+  }
+}

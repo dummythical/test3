@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Server Message</title>
+</head>
+<body>
+  <h1>Message from Server</h1>
+  <pre id="message">Loading...</pre>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      window.api.fetchMessage()
+        .then(msg => document.getElementById('message').textContent = msg)
+        .catch(err => document.getElementById('message').textContent = 'Error: ' + err);
+    });
+  </script>
+</body>
+</html>
